@@ -1,0 +1,10 @@
+mixin btn(op = {})
+    - var classMods = ''
+
+    - if (op.mods)
+        each mod in op.mods
+            - classMods += "_" + mod + " "
+
+    +b.btn(class=classMods + " " + op.classes)
+        +e.container 
+            block

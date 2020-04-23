@@ -1,0 +1,32 @@
+.contacts {
+    max-width: 500px;
+    margin: 0 auto;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+            margin: 25px 0;
+        }
+    }
+
+    &__key {
+        padding: 5px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__val {
+        padding: 5px;
+        font-size: 18px;
+        font-weight: 600;
+
+        a {
+            color: $primary;
+            text-decoration: underline;
+        } 
+    }
+}
+ 

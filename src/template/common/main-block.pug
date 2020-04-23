@@ -1,0 +1,28 @@
+include ./service
+
++b.main-block
+    +e.body
+        +e.space
+        +e.idea Верстаю <br/>
+            span.text-p  сайты 
+            | и 
+            span.text-p  UI-kit 
+            | из макета
+            span.text-small  (пока) 
+            span.text-w бесплатно
+            |!
+        +e.section._grey
+            +e.subtitle Стэк
+            +e.services
+                +service("Вёрстка сайта/ui-kit", ["Pug", "Scss", "Webpack", "ES7", "БЭМ"])
+                +service("Помощь на фронте",     ["JQuery", "JQuery UI", "Typescript"])
+                +service("Помощь на бэке",       ["NodeJs", "Laravel", "Spring"])
+                +service("Android разработка",   ["Java", "Kotlin"])
+                +service("Нужен сотрудник?",     ["NextJs", "Angular 2+", "Android"])
+
+        +e.section
+            +e.subtitle Обо мне
+            +e.paragraph Меня зовут Савва. Я - фронтенд разработчик. Уже полтора года увлекаюсь программированием. Помимо веба, для разнообразия, изучаю андроид и гейм разработку. Знаю всю мощь объектно ориентированного программирования и нескольно паттернов проектирования. Хочу стать профессиональным веб-программистом
+        +e.section._grey._big-center
+            +e.subtitle Обращайтесь
+            include ./contacts

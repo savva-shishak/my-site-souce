@@ -1,0 +1,93 @@
+.btn {
+    transition: .2s;
+    font-size: 16px;
+    font-weight: 600;
+    outline: 1px solid $primary;
+    cursor: pointer;
+    text-align: center;
+
+    display: block;
+    width: max-content;
+
+    &:hover {
+        background: $primary;
+        color: white;
+    }
+
+    &__container {
+        padding: 12px;
+    }
+
+    &_big {
+        font-size: 18px;
+
+        .btn__container {
+            padding: 15px 25px;
+        }
+    }
+
+    &_small {
+        font-size: 14px;
+
+        .btn__container {
+            padding: 10px;
+        }
+    }
+
+    &_primary {
+        outline: none;
+        background: $primary;
+        color: white;
+
+        &:hover {
+            background: rgba($primary, .8);
+        }
+    }
+
+    &_accent {
+        outline: none;
+        background: $accent;
+        color: white;
+
+        &:hover {
+            background: rgba($accent, .8);
+        }
+    }
+
+    &_warn {
+        outline: none;
+        background: $warn;
+        color: white;
+
+        &:hover {
+            background: rgba($warn, .8);
+        }
+    }
+
+    &_primary-outline {
+        outline: 1px solid $primary;
+        color: $primary;
+
+        &:hover {
+            background: $primary;
+        }
+    }
+
+    &_accent-outline {
+        outline: 1px solid $accent;
+        color: $accent;
+
+        &:hover {
+            background: $accent;
+        }
+    }
+
+    &_warn-outline {
+        outline: 1px solid $warn;
+        color: $warn;
+
+        &:hover {
+            background: $warn;
+        }
+    }
+}

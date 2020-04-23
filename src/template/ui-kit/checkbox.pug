@@ -1,0 +1,19 @@
+mixin checkbox(op = {})
+    - var classMods = ''
+    - var value = false
+
+    - if (op.mods != undefined)
+        each mod in op.mods
+            - classMods += "_" + mod + " "
+
+    - if (op.value)
+        - value = op.value
+
+    +b.checkbox(class=classMods + " " + op.classes)
+        +e.container
+            input(type="hidden", id=(op.inputId || "") value=value)
+            +e.square
+                +e.mark
+                    i.fas.fa-check
+            +e.label 
+                block

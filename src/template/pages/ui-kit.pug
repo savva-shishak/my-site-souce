@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Ui-kit
+        script(src="https://kit.fontawesome.com/fdfd4b4d91.js" crossorigin="anonymous")
+        include ../../../node_modules/bemto.pug/bemto.pug
+        include ../ui-kit/all
+    body.body_grey
+        +b.header
+            +e.body 
+                +e.space
+                +e.link 
+                    a(href="/") Сам сайт
+        .header-space
+        
+        .container.row(gutter="1")
+            #ui-kit-view-colors.col-12.col-md-4
+                +b.card
+                    +e.title 
+                        .h2 Цвета:
+                    +e.body
+                        .h5.pb-1.pt-3 Первичный <span class="pr-val"></span>
+                        .box.box_pr 
+                        
+                        .h5.pb-1.pt-3 Акцент <span class="ac-val"></span>
+                        .box.box_ac 
+                        
+                        .h5.pb-1.pt-3 Внимание <span class="wr-val"></span>
+                        .box.box_wr
+
+            #ui-kit-view-colors.col-12.col-md-4
+                +b.card
+                    +e.title 
+                        .h2 Шрифты:
+                    +e.body
+                        .text По умолчанию
+
+                        .h5.pb-1.pt-3 Заголовки
+                        .h1 Заголовок H1
+                        .h2 Заголовок H2
+                        .h3 Заголовок H3
+                        .h4 Заголовок H4
+                        .h5 Заголовок H5
+                        .h6 Заголовок H6
+
+                        .h5.pb-1.pt-3 Цвета
+                        span.text.text_primary Первичный
+                        span.text.text_accent  Акцент
+                        span.text.text_warn  Внимание
+
+            #ui-kit-view-buttons.col-12.col-md-4
+                +b.card
+                    +e.title 
+                        .h2 Кнопки:
+                    +e.body
+                        .row
+                            +btn По умолчанию
+
+                        .h5.pb-1.pt-3 Размеры
+                        .row(gutter="1")
+                            +btn({mods: ["big"]}) Большая
+                            +btn Средняя
+                            +btn({mods: ["small"]}) Маленькая
+
+                        .h5.pb-1.pt-3 Цвета
+                        .row(gutter="1")
+                            +btn({mods: ["primary"]}) Первичный
+                            +btn({mods: ["accent"]}) Акцент
+                            +btn({mods: ["warn"]}) Внимание
+
+                        .h5.pb-1.pt-3 Рамки
+                        .row(gutter="1")
+                            +btn({mods: ["primary-outline"]}) Первичный
+                            +btn({mods: ["accent-outline"]}) Акцент
+                            +btn({mods: ["warn-outline"]}) Внимание
+            #ui-kit-view-checkboxes.col-12.col-md-4 
+                +b.card
+                    +e.title 
+                        .h2 Флажки")
+                    +e.body 
+                        +checkbox({mods: [], inputId: "def"}) По умолчанию
+
+                        .h5.pb-1.pt-3 Цвета
+                        +checkbox({mods: ["primary"], inputId: "colors"}) Первичный
+                        +checkbox({mods: ["accent"], inputId: "colors"}) Акцент
+                        +checkbox({mods: ["warn"], inputId: "colors"}) Внимание

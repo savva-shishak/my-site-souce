@@ -1,0 +1,7 @@
+mixin service(title, tehnos, href="#")
+    +b.service
+        +e.title=title
+        +e.tehnos
+            each val in tehnos
+                +e.teh=val
+        +btn({mods: ["big"], classes: "service__btn to-down"}) Обратиться

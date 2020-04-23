@@ -1,0 +1,41 @@
+$primary: #FF3D00;
+$accent: #9f04be;
+$warn: #ff0000;
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    
+    color: black;
+
+    .text-p {
+        color: $primary;
+    }
+    
+    .text-a {
+        color: $accent;
+    }
+
+    .text-w {
+        color: $warn;
+    }
+
+    .text-small {
+        font-size: .8em;
+        color: grey;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.dark {
+    color: white;
+
+    background: black;
+
+    a {
+        color: white;
+    }
+}

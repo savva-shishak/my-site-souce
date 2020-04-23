@@ -1,0 +1,8 @@
+.copy-buffer span {
+    color: $primary;
+    cursor: pointer;
+}
+
+.copy-buffer.copy-buffer_coped span {
+    color: $accent !important;
+}

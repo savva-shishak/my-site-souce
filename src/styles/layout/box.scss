@@ -1,0 +1,16 @@
+.box {
+    padding: 20px;
+    //width: 100%;
+
+    &_pr {
+        background: $primary;
+    }
+
+    &_ac {
+        background: $accent;
+    }
+
+    &_wr {
+        background: $warn;
+    }
+}
